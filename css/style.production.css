@@ -76,17 +76,16 @@ header {
   text-align: left;
 }
 body {
-    background-color: #e7e7de;
-    font-family: 'Lato', sans-serif;
+  background-color: #e7e7de;
+  font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 20px;
   color: #0f3057;
   text-align: center;
-    }
+}
 
-
-    a:link {
-      text-decoration: none;
+a:link {
+  text-decoration: none;
   color: #00587a;
 }
 
@@ -108,17 +107,16 @@ a:active {
   max-width: 700px;
   margin: 0 auto;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .profile__portrait {
   float: left;
   width: 250px;
   margin-right: 40px;
-  height:auto;
+  height: auto;
   border-radius: 50%;
 }
-
 
 .button {
   /* overwrites browser defaults and resets the border */
@@ -139,7 +137,6 @@ a:active {
   transition: 0.9s;
 }
 
-
 button {
   /* overwrites browser defaults and resets the border */
   border: none;
@@ -159,15 +156,19 @@ button {
   transition: 0.9s;
 }
 
-.button:hover, .button:focus, button:hover, button:focus {
+.button:hover,
+.button:focus,
+button:hover,
+button:focus {
   /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
   /* reduces the opacity of the button to 80% */
-  opacity: 0.8;}
+  opacity: 0.8;
+}
 
-  * {
+* {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .page-header {
@@ -180,32 +181,32 @@ button {
 
 .page-header__item {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 200px;
-          flex: 0 1 200px;
+  -ms-flex: 0 1 200px;
+  flex: 0 1 200px;
   width: 200px;
 }
 
 .page-header__item:last-child {
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   text-align: right;
 }
 
 .page-footer {
   clear: both;
-display: -webkit-box;
-display: -ms-flexbox;
-display: flex;
--webkit-box-orient: vertical;
--webkit-box-direction: normal;
-    -ms-flex-direction: column;
-        flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   left: 0;
-   position: absolute;
-   bottom: 0;
-   width: 100%;
-   height: 0rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 0rem;
 }
 
 #page-container {
@@ -214,14 +215,13 @@ display: flex;
 }
 
 #content-wrap {
-  padding-bottom: 1rem;    /* Footer height */
+  padding-bottom: 1rem; /* Footer height */
 }
-
 
 .page-header__item:last-child {
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   text-align: right;
 }
 
@@ -234,21 +234,18 @@ display: flex;
   margin-left: 15px;
 }
 
-
 .grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 25px 1fr;
   grid-template-columns: 1fr 1fr;
   grid-gap: 25px;
-  padding: 2.5%
+  padding: 2.5%;
 }
 .grid__item {
   background-color: lightgray;
   padding: inherit;
 }
-
-
 
 @media all and (max-width: 500px) {
   .grid {
@@ -256,7 +253,7 @@ display: flex;
     grid-template-columns: 1fr;
   }
 }
-@media all and (min-width: 500px) and (max-width: 750px){
+@media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
     -ms-grid-columns: 1fr 25px 1fr;
     grid-template-columns: 1fr 1fr;
@@ -275,7 +272,7 @@ display: flex;
   }
 }
 
-@-webkit-keyframes colorchange{
+@-webkit-keyframes colorchange {
   0% {
     fill: #edc655;
   }
@@ -287,7 +284,7 @@ display: flex;
   }
 }
 
-@keyframes colorchange{
+@keyframes colorchange {
   0% {
     fill: #edc655;
   }
@@ -299,7 +296,7 @@ display: flex;
   }
 }
 
-@-webkit-keyframes colorchange2{
+@-webkit-keyframes colorchange2 {
   0% {
     fill: #262222;
   }
@@ -311,7 +308,7 @@ display: flex;
   }
 }
 
-@keyframes colorchange2{
+@keyframes colorchange2 {
   0% {
     fill: #262222;
   }
@@ -326,77 +323,83 @@ display: flex;
 @-webkit-keyframes cloud-move {
   from {
     -webkit-transform: translate(0, 50px);
-            transform: translate(0, 50px);
+    transform: translate(0, 50px);
   }
   to {
     -webkit-transform: translate(200px, 50px);
-            transform: translate(200px, 50px);
+    transform: translate(200px, 50px);
   }
 }
 
 @keyframes cloud-move {
   from {
     -webkit-transform: translate(0, 50px);
-            transform: translate(0, 50px);
+    transform: translate(0, 50px);
   }
   to {
     -webkit-transform: translate(200px, 50px);
-            transform: translate(200px, 50px);
+    transform: translate(200px, 50px);
   }
 }
 
 @-webkit-keyframes cloud-move-reverse {
   from {
     -webkit-transform: translate(446px, 48px);
-            transform: translate(446px, 48px);
+    transform: translate(446px, 48px);
   }
   to {
     -webkit-transform: translate(100px, 48px);
-            transform: translate(100px, 48px);
+    transform: translate(100px, 48px);
   }
 }
 
 @keyframes cloud-move-reverse {
   from {
     -webkit-transform: translate(446px, 48px);
-            transform: translate(446px, 48px);
+    transform: translate(446px, 48px);
   }
   to {
     -webkit-transform: translate(100px, 48px);
-            transform: translate(100px, 48px);
+    transform: translate(100px, 48px);
   }
 }
 
 .sun {
   -webkit-animation-duration: 4s;
-          animation-duration: 4s;
+  animation-duration: 4s;
   -webkit-animation-name: colorchange;
-          animation-name: colorchange;
+  animation-name: colorchange;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
-          animation-direction: alternate;
+  animation-direction: alternate;
   -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-timing-function: linear;
 }
 
 .cloud-front {
   -webkit-animation-duration: 30s;
-          animation-duration: 30s;
+  animation-duration: 30s;
   -webkit-animation-name: cloud-move;
-          animation-name: cloud-move;
+  animation-name: cloud-move;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
-          animation-direction: alternate;
+  animation-direction: alternate;
   -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-timing-function: linear;
 }
-
-
-
 
 .cloud-back {
   -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
-          animation: 34s cloud-move-reverse infinite alternate linear;
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+.h2 {
+  font-size: 40px;
+}
+
+.a2 {
+  text-decoration: none;
+  color: #382626;
 }
