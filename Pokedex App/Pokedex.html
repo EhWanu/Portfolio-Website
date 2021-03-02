@@ -8,24 +8,25 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Pokedex</title>
-  <link href="css/styles.css" rel="stylesheet" type="text/css" />
+  <link href="dist/stylesmin.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
 
   <!---Navbar-->
-  <nav class="navbar navbar-custom text-uppercase fixed-top">
-    <a class="navbar-brand">Pokedex</a>
-    <form class="form-inline">
-      <input class="pokemon-search" oninput="searchPokemon()" class="form-control mb-2 mb-md-0" type="search"
-        placeholder="Search" aria-label="Search">
-      <button class="btn btn-danger my-2 my-sm-0" type="submit">Search</button>
+  <nav class="navbar navbar-expand- navbar-custom text-uppercase fixed-top" >
+    <div class="container-fluid flex flex-column flex-md-row  ">
+    <a class="navbar-brand">Pokédex</a>
+    <form class="justify-content-center" >
+      <input id='pokemon-search' onkeyup="pokemonSearch()" placeholder="Search" class="form-control mb-1 md-md-0">
     </form>
+  </div>
   </nav>
 
+  
 
   <!--List created via Api-->
-  <div class="list-group"></div>
+  <div class="list-group col-md-6 offset-md-3" id='me'></div>
 
   <!--Modal div-->
   <div class="modal fade" id="pokemonModal" tabindex="-1" role="dialog" aria-labelledby="pokemonModalLabel"
@@ -34,7 +35,7 @@
       <div class="modal-content text-center">
         <div class="modal-header">
           <h5 class="modal-title text-capitalize fs-2" id="pokemonModalLabel"></h5>
-          <button type="btn btn-danger" class="close" data-dismiss="modal" aria-label="Close">
+          <button type="btn " class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
@@ -60,7 +61,7 @@
     crossorigin="anonymous"></script>
   <script src="js/promise-polyfill.js"></script>
   <script src="js/fetch.umd.js"></script>
-  <script src="js/scripts.js"></script>
+  <script src="dist\scriptsmin.js"></script>
 
 </body>
 

@@ -19,16 +19,14 @@ let pokemonRepository = (function () {
 
   function addListItem(pokemon) {
     let pokemonList = document.querySelector(".list-group");
-    let listpokemon = document.createElement("list-group-item");
     let button = document.createElement("button");
     button.innerText = pokemon.name;
     button.classList.add('text-capitalize');
-    button.classList.add("btn-danger", "btn-lg", "btn-block");
+    button.classList.add("btn-light", "btn-outline-secondary", "btn-lg", "btn-custom" );
     button.setAttribute('data-toggle', 'modal');
-    button.setAttribute('data-bs-name', pokemon.name);
+    button.setAttribute('data-bs-name', pokemon.name); 0
     button.setAttribute('data-target', '#pokemonModal')
-    listpokemon.appendChild(button);
-    pokemonList.appendChild(listpokemon);
+    pokemonList.appendChild(button);
     button.addEventListener("click", function (event) {
       showDetails(pokemon);
     });
@@ -135,3 +133,27 @@ function hideLoadMessage() {
   let loadMessage = document.querySelector('load-message');
   loadMessage.parentElement.removeChild(loadMessage);
 }
+
+
+function pokemonSearch() {
+  var input, filter, ul, button, i, txtValue;
+  input = document.querySelector('#pokemon-search')
+  filter = input.value.toUpperCase();
+  ul = document.getElementById('me');
+  button = ul.getElementsByTagName('button');
+
+  for (i = 0; i < button.length; i++) {
+    txtValue = button[i].textContent || button[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      button[i].style.display = "";
+    } else {
+      button[i].style.display = "none";
+    }
+  }
+}
+
+window.addEventListener('keydown', function (e) {
+  if (e.keyCode == '13') {
+    e.preventDefault();
+  }
+})
